@@ -1,5 +1,5 @@
 {
-  "name": "astro-link-in-bio-theme",
+  "name": "pokedrops-link-in-bio",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -12,7 +12,9 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/tailwind": "^5.1.1",
-    "astro": "^4.15.12",
+    "@iconify-json/fa6-brands": "^1.1.22",
+    "astro": "^5.1.1",
+    "astro-icon": "^1.1.5",
     "posthog-js": "^1.166.2",
     "typescript": "^5.6.2"
   },

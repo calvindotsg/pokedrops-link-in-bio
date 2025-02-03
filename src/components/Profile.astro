@@ -1,5 +1,5 @@
 ---
-import config from '../../config.js';
+import config from '../configs/config.js';
 import { Image } from 'astro:assets';
 ---
 
@@ -9,8 +9,8 @@ import { Image } from 'astro:assets';
     alt={config.user.name}
     width={64}
     height={64}
-    class="w-36 h-36 rounded-full mx-auto mb-4 shadow-sm border-solid border-2 border-red-300"
+    class="w-36 h-36 rounded-full mx-auto mb-4 shadow-sm border-solid border-2 border-blue-300"
   />
   <h1 class="text-4xl font-extrabold tracking-wide">{config.user.name}</h1>
-  <p class="text-gray-700 front-semibold tracking-wide">{config.user.bio}</p>
+  <p class="text-gray-700 py-2 front-semibold tracking-wide">{config.user.bio}</p>
 </div>
