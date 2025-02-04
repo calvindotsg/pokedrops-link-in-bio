@@ -4,17 +4,19 @@ import {Icon} from 'astro-icon/components';
 export interface Props {
     title: string;
     url: string;
-    icon?: string;
+    icon: string;
+    description: string;
 }
 
-const {title, url, icon} = Astro.props;
+const {title, url, icon, description} = Astro.props;
 ---
 
 <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`${title}`}
+        aria-label={`${title}: ${description}`}
+        data-umami-event={`LinkButton - ${title}`}
         class="block w-full md:max-w-[50vw] mx-auto bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300 border-solid border-2 border-slate-950 py-3 px-4 flex items-center justify-center"
 >
     {icon &&

@@ -15,7 +15,7 @@ export interface SiteConfig {
         icon: string; url: string; title: string;
     }>;
     links: Array<{
-        title: string; url: string; icon: string;
+        title: string; url: string; icon: string; description: string;
     }>;
     products: Array<{
         title: string; description: string; url: string; price: number; includePriceOnSite: boolean; image: string; availability: String;

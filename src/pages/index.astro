@@ -16,7 +16,7 @@ import {Availability} from "../types";
             <SocialLinks/>
             <div class="space-y-4 mt-6">
                 {config.links.map((link) => (
-                        <LinkButton title={link.title} url={link.url} icon={link.icon}/>))}
+                        <LinkButton title={link.title} url={link.url} icon={link.icon} description={link.description}/>))}
             </div>
             <div class="space-y-4 mt-6">
                 {config.products.map((product) => (

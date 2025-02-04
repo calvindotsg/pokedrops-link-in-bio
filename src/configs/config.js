@@ -18,7 +18,7 @@ const config = {
     }, // Add more social links as needed
         // Search for icons here - https://fontawesome.com/search
     ], links: [{
-        title: "Get notified to our latest drops! (it's free)", url: "https://t.me/pokedrops", icon: "fa6-brands:telegram",
+        description: "Get notified to our latest drops! (it's free)", url: "https://t.me/pokedrops", icon: "fa6-brands:telegram", title: "Telegram CTA",
     }, // Add more links as needed
     ], products: [
         {
