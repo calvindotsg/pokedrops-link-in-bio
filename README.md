@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center">👋 We are PokeDrops</h1>
+  <h1 align="center">👋 We are PokéDrops</h1>
 </p>
 <!-- PROJECT LOGO -->
 
@@ -30,7 +30,6 @@ A link in bio built with [Astro](https://astro.build), get notified with our var
 - [TailwindCSS](https://tailwindcss.com)
 - [Font Awesome](https://fontawesome.com/)
 - [Netlify](https://www.netlify.com/)
-
 
 ## Getting Started
 

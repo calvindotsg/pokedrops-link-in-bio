@@ -1,6 +1,6 @@
 ---
-// src/components/SocialLinks.astro
 import config from '../configs/config.js';
+import {Icon} from 'astro-icon/components';
 ---
 
 <div class="flex justify-center space-x-6 md:space-x-10 mt-4">
@@ -8,8 +8,8 @@ import config from '../configs/config.js';
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-gray-800 hover:text-gray-950 transition-colors duration-300 text-4xl sm:text-5xl md:text-6xl hover:animate-wiggle"
+                    class="text-gray-800 hover:text-gray-950 transition-transform duration-300 text-4xl sm:text-5xl md:text-6xl hover:animate-wiggle"
             >
-                <i class={`fab fa-${link.platform} font-bold`}></i>
+                <Icon name={`${link.icon}`} class="h-10 sm:h-12 md:h-14 text-inherit"/>
             </a>))}
 </div>

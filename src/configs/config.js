@@ -10,22 +10,26 @@ const config = {
     }, background: {
         color: "#f0f0f0", image: backgroundImage,
     }, socialLinks: [{
-        platform: "telegram", url: "https://t.me/pokedrops", icon: "telegram",
+        icon: "fa6-brands:telegram", url: "https://t.me/pokedrops",
     }, {
-        platform: "instagram", url: "https://instagram.com/getpokedrops", icon: "camera-retro",
+        icon: "fa6-brands:instagram", url: "https://instagram.com/getpokedrops",
+    }, {
+        icon: "fa6-solid:cart-shopping", url: "https://www.carousell.sg/u/nightcorebchong/",
     }, // Add more social links as needed
         // Search for icons here - https://fontawesome.com/search
     ], links: [{
-        title: "Get notified to our latest drops! (it's free)", url: "https://t.me/pokedrops", icon: "telegram",
+        title: "Get notified to our latest drops! (it's free)", url: "https://t.me/pokedrops", icon: "fa6-brands:telegram",
     }, // Add more links as needed
-    ], products: [{
-        title: "Pokémon UPC 151",
-        description: "151 ultra premium collection, Great condition",
-        url: "https://www.carousell.sg/p/good-deal-pokemon-upc-151-1350900199/",
-        price: 300,
-        includePriceOnSite: true,
-        image: productImage,
-    }, // Add more products as needed
+    ], products: [
+        {
+            title: "Pokémon UPC 151",
+            description: "151 ultra premium collection, Great condition",
+            url: "https://www.carousell.sg/p/good-deal-pokemon-upc-151-1350900199/",
+            price: 300,
+            includePriceOnSite: true,
+            image: productImage,
+            availability: "Reserved", // Options: Available, Reserved, Sold
+        }, // Add more products as needed
     ],
 };
 

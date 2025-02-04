@@ -1,5 +1,6 @@
 ---
 import {Image} from 'astro:assets';
+import {Availability} from '../types';
 
 export interface Props {
     title: string;
@@ -8,9 +9,16 @@ export interface Props {
     price: number;
     includePriceOnSite: boolean;
     image: string;
+    availability: Availability;
 }
 
-const {title, description, url, price, includePriceOnSite, image} = Astro.props;
+const {title, description, url, price, includePriceOnSite, image, availability} = Astro.props;
+
+const badgeColors = {
+    [Availability.Available]: "bg-green-500",
+    [Availability.Reserved]: "bg-purple-500",
+    [Availability.Sold]: "bg-orange-500",
+};
 ---
 
 <a
@@ -19,19 +27,24 @@ const {title, description, url, price, includePriceOnSite, image} = Astro.props;
         rel="noopener noreferrer"
         class="block w-full md:max-w-[50vw] mx-auto bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300 border-solid border-2 border-slate-950"
 >
-    <div class="flex items-center p-4">
+    <div class="relative flex items-center p-4">
+        <!-- Availability Badge -->
+        <div class={`absolute top-2 right-2 px-2 py-1 rounded-md text-white text-xs ${badgeColors[availability]}`}>
+            {availability}
+        </div>
         <Image
-                src={image}
-                alt={title}
-                width={64}
-                height={64}
-                class="w-16 h-16 object-cover rounded-md mr-4"
+            src={image}
+            alt={title}
+            width={64}
+            height={64}
+            class="w-16 h-16 object-cover rounded-md mr-4"
         />
         <div class="flex-grow">
             <h3 class="font-bold">{title}</h3>
             <p class="text-sm text-gray-600">{description}</p>
         </div>
         {includePriceOnSite && (
-                <div class="text-lg font-bold text-green-600">${price.toFixed(2)}</div>)}
+            <div class="text-lg font-medium text-black">${price.toFixed(2)}</div>
+        )}
     </div>
 </a>
