@@ -16,7 +16,9 @@ const {title, url, icon, description} = Astro.props;
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`${title}: ${description}`}
-        data-umami-event={`LinkButton - ${title}`}
+        data-umami-event={`LinkButton:click`}
+        data-umami-event-title="${title}"
+        data-umami-event-description="${description}"
         class="block w-full md:max-w-[50vw] mx-auto bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition duration-300 border-solid border-2 border-slate-950 py-3 px-4 flex items-center justify-center"
 >
     {icon &&
