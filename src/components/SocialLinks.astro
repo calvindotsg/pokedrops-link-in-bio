@@ -4,14 +4,12 @@ import config from '../configs/config.js';
 ---
 
 <div class="flex justify-center space-x-6 md:space-x-10 mt-4">
-  {config.socialLinks.map((link) => (
-    <a
-      href={link.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-gray-800 hover:text-gray-950 transition-colors duration-300 text-4xl sm:text-5xl md:text-6xl hover:animate-wiggle"
-    >
-      <i class={`fab fa-${link.platform} font-bold`}></i>
-    </a>
-  ))}
+    {config.socialLinks.map((link) => (<a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-gray-800 hover:text-gray-950 transition-colors duration-300 text-4xl sm:text-5xl md:text-6xl hover:animate-wiggle"
+            >
+                <i class={`fab fa-${link.platform} font-bold`}></i>
+            </a>))}
 </div>
