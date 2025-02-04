@@ -8,7 +8,7 @@ const config = {
     user: {
         name: "PokéDrops", bio: "Limited TCG drops at market-breaking prices.", profileImage: profileImage,
     }, background: {
-        color: "#f0f0f0", image: backgroundImage,
+        color: "#93c5fd", image: backgroundImage,
     }, socialLinks: [{
         icon: "fa6-brands:telegram", url: "https://t.me/pokedrops", title: "Telegram",
     }, {

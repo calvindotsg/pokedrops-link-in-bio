@@ -35,6 +35,8 @@ const {title, description, image} = Astro.props;
     <meta name="twitter:description" content={description}/>
     <meta name="twitter:image" content={image || '/preview.jpg'}/>
 
+    <meta name="theme-color" content="#93c5fd">
+    <link rel="manifest" href="/manifest.json">
     <script defer src="https://cloud.umami.is/script.js" data-website-id={import.meta.env.UMAMI_ID}></script>
     <link rel="sitemap" href="/sitemap-index.xml"/>
     </head>
