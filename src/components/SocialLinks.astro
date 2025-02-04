@@ -8,6 +8,7 @@ import {Icon} from 'astro-icon/components';
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={link.title}
                     class="text-gray-800 hover:text-gray-950 transition-transform duration-300 text-4xl sm:text-5xl md:text-6xl hover:animate-wiggle"
             >
                 <Icon name={`${link.icon}`} class="h-10 sm:h-12 md:h-14 text-inherit"/>

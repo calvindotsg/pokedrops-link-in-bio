@@ -12,7 +12,7 @@ export interface SiteConfig {
         color: string; image: string;
     };
     socialLinks: Array<{
-        icon: string; url: string;
+        icon: string; url: string; title: string;
     }>;
     links: Array<{
         title: string; url: string; icon: string;

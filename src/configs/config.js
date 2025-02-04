@@ -10,11 +10,11 @@ const config = {
     }, background: {
         color: "#f0f0f0", image: backgroundImage,
     }, socialLinks: [{
-        icon: "fa6-brands:telegram", url: "https://t.me/pokedrops",
+        icon: "fa6-brands:telegram", url: "https://t.me/pokedrops", title: "Telegram",
     }, {
-        icon: "fa6-brands:instagram", url: "https://instagram.com/getpokedrops",
+        icon: "fa6-brands:instagram", url: "https://instagram.com/getpokedrops", title: "Instagram",
     }, {
-        icon: "fa6-solid:cart-shopping", url: "https://www.carousell.sg/u/nightcorebchong/",
+        icon: "fa6-solid:cart-shopping", url: "https://www.carousell.sg/u/nightcorebchong/", title: "Carousell",
     }, // Add more social links as needed
         // Search for icons here - https://fontawesome.com/search
     ], links: [{
