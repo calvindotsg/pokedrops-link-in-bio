@@ -6,6 +6,7 @@ import Profile from '../components/Profile.astro';
 import SocialLinks from '../components/SocialLinks.astro';
 import LinkButton from '../components/LinkButton.astro';
 import ProductLink from '../components/ProductLink.astro';
+import PostHog from '../components/posthog.astro'
 import {Availability} from "../types";
 ---
 
@@ -30,6 +31,7 @@ import {Availability} from "../types";
                                 availability={product.availability as Availability}
                         />))}
             </div>
+            <PostHog />
         </main>
     </div>
 </Layout>
