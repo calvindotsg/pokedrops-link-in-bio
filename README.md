@@ -28,6 +28,7 @@ A link in bio built with [Astro](https://astro.build), get notified with our var
 
 - [Astro](https://astro.build)
 - [TailwindCSS](https://tailwindcss.com)
+- [Posthog](https://posthog.com/) 
 - [Font Awesome](https://fontawesome.com/)
 - [Netlify](https://www.netlify.com/)
 

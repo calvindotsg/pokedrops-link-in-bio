@@ -9,6 +9,7 @@ import {Icon} from 'astro-icon/components';
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={link.title}
+                    posthog.capture('SocialLinks event', { property: 'value1' })
                     data-umami-event={`SocialLinks:click`}
                     data-umami-event-title="${title}"
                     data-umami-event-description="${description}"
