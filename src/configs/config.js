@@ -2,7 +2,7 @@
 import profileImage from '../images/profilepic.jpg?url';
 import backgroundImage from '../images/backgrounds/pokedrop.jpg?url';
 import productImage from '../images/product1.jpg?url';
-import productImage20250207 from '../images/product20250207.jpg?url';
+import productImage20250207 from '../images/product20250207.JPG?url';
 
 /** @type {import('../types.js').SiteConfig} */
 const config = {
