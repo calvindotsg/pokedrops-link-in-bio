@@ -2,6 +2,7 @@
 import profileImage from '../images/profilepic.jpg?url';
 import backgroundImage from '../images/backgrounds/pokedrop.jpg?url';
 import productImage from '../images/product1.jpg?url';
+import productImage20250207 from '../images/product20250207.jpg?url';
 
 /** @type {import('../types.js').SiteConfig} */
 const config = {
@@ -29,7 +30,15 @@ const config = {
             includePriceOnSite: true,
             image: productImage,
             availability: "Reserved", // Options: Available, Reserved, Sold
-        }, // Add more products as needed
+        }, {
+            title: "[PALDEA EVOLVED] Sleeved Booster Packs",
+            description: "Selling Leftover PALDEA EVOLVED sleeved boosters. HAVE 30 LEFT. $8.20 / pack, $8 / pack for all",
+            url: "https://carousell.app.link/zwoZOrUjNQb",
+            price: 8,
+            includePriceOnSite: true,
+            image: productImage20250207,
+            availability: "Available" // Options: Available, Reserved, Sold
+        },// Add more products as needed
     ],
 };
 
