@@ -34,7 +34,7 @@ const badgeColors = {
     data-umami-event-availability="${availability}"
     class="block w-full md:max-w-[50vw] mx-auto bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-md transition duration-300 border-solid border border-slate-950"
 >
-    <div class="relative flex items-center p-3">
+    <div class="relative flex p-3">
         <!-- Availability Badge -->
         <div class={`absolute top-2 right-2 px-2 py-1 rounded-md text-white text-xs ${badgeColors[availability]}`}>
             {availability}
@@ -44,15 +44,17 @@ const badgeColors = {
             alt={title}
             width={128}
             height={128}
-            class="w-16 h-16 object-cover rounded-md mr-4"
+            class="flex-none w-16 h-16 object-cover rounded-md mr-4"
             loading="lazy"
         />
-        <div class="flex-grow">
-            <h1 class="text-base font-medium">{title}</h1>
-            <p class="text-xs text-gray-600">{description}</p>
+        <div class="flex-grow flex flex-col justify-between">
+            <div>
+                <h1 class="text-base font-medium">{title}</h1>
+                <p class="text-xs text-gray-600">{description}</p>
+            </div>
+            {includePriceOnSite && (
+                <div class="text-base font-medium text-black">${price.toFixed(2)}</div>
+            )}
         </div>
-        {includePriceOnSite && (
-            <div class="text-base font-medium text-black">${price.toFixed(2)}</div>
-        )}
     </div>
 </a>
