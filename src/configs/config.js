@@ -9,7 +9,7 @@ import productImage202502082 from '../images/productImage202502082.JPG?url';
 /** @type {import('../types.js').SiteConfig} */
 const config = {
     user: {
-        name: "PokéDrops", bio: "Limited TCG drops at market-breaking prices.", profileImage: profileImage,
+        name: "PokéDrops", bio: "Buy TCG packs at market-breaking prices", profileImage: profileImage,
     }, background: {
         color: "#93c5fd", image: backgroundImage,
     }, socialLinks: [{
