@@ -4,6 +4,7 @@ import backgroundImage from '../images/backgrounds/pokedrop.jpg?url';
 import productImage from '../images/product1.jpg?url';
 import productImage20250207 from '../images/product20250207.JPG?url';
 import productImage20250208 from '../images/productImage20250208.jpeg?url';
+import productImage202502082 from '../images/productImage202502082.JPG?url';
 
 /** @type {import('../types.js').SiteConfig} */
 const config = {
@@ -44,6 +45,14 @@ const config = {
             price: 85,
             includePriceOnSite: true,
             image: productImage20250208,
+            availability: "Available" // Options: Available, Reserved, Sold
+        }, {
+            title: "[Paldean Fates] Booster Bundle",
+            description: "All shrinked and in perfect condition",
+            url: "https://carousell.app.link/V6TzQDHNOQb",
+            price: 75,
+            includePriceOnSite: true,
+            image: productImage202502082,
             availability: "Available" // Options: Available, Reserved, Sold
         }, // Add more products as needed
     ],
