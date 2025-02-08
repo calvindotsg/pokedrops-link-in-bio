@@ -32,18 +32,18 @@ const config = {
             image: productImage,
             availability: "Available", // Options: Available, Reserved, Sold
         }, {
-            title: "[PALDEA EVOLVED] Sleeved Booster Packs",
-            description: "Selling Leftover PALDEA EVOLVED sleeved boosters. HAVE 30 LEFT. $8.20 / pack, $8 / pack for all",
+            title: "[Paldea Evolved] Sleeved Booster Packs",
+            description: "Selling Leftover sleeved boosters.",
             url: "https://carousell.app.link/zwoZOrUjNQb",
-            price: 8,
+            price: 8.2,
             includePriceOnSite: true,
             image: productImage20250207,
             availability: "Available" // Options: Available, Reserved, Sold
         }, {
             title: "Super Electric Breaker JP BB",
-            description: "[Non-shrinked] have 2 boxes, 85 per box, 83 per box if buy both",
+            description: "[Non-shrinked] have 2 boxes.",
             url: "https://carousell.app.link/MQf9CmXkOQb",
-            price: 83,
+            price: 85,
             includePriceOnSite: true,
             image: productImage20250208,
             availability: "Available" // Options: Available, Reserved, Sold
