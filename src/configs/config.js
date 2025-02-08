@@ -12,8 +12,6 @@ const config = {
     }, background: {
         color: "#93c5fd", image: backgroundImage,
     }, socialLinks: [{
-        icon: "fa6-brands:telegram", url: "https://t.me/pokedrops", title: "Telegram",
-    }, {
         icon: "fa6-brands:instagram", url: "https://instagram.com/getpokedrops", title: "Instagram",
     }, {
         icon: "fa6-solid:cart-shopping", url: "https://www.carousell.sg/u/nightcorebchong/", title: "Carousell",
